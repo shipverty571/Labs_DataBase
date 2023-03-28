@@ -39,5 +39,10 @@ namespace View.MasterTeacherApp
         {
             StudyPlanForm.Instance.ShowForm();
         }
+
+        private void DisciplineToolStripButton_Click(object sender, EventArgs e)
+        {
+            DisciplineForm.Instance.ShowForm();
+        }
     }
 }

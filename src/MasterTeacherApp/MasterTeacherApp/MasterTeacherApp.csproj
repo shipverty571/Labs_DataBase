@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Forms\DisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\DisciplineForm.Designer.cs">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\StudyPlanForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Forms\DisciplineForm.resx">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\StudyPlanForm.resx">
       <DependentUpon>StudyPlanForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resource\about_16x16.png" />
+    <Content Include="Resource\discipline_16x16.png" />
     <Content Include="Resource\logout_16x16.png" />
     <Content Include="Resource\studyPlan_16x16.png" />
     <Content Include="Resource\teacher_16x16.png" />
