@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherForm));
             System.Windows.Forms.Label iD_TeacherLabel;
             System.Windows.Forms.Label surnameLabel;
             System.Windows.Forms.Label firstnameLabel;
@@ -37,23 +36,17 @@
             System.Windows.Forms.Label workExperienceMonthsLabel;
             System.Windows.Forms.Label competenciesLabel;
             System.Windows.Forms.Label salaryLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherForm));
             this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
             this.teachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.teachersTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TeachersTableAdapter();
             this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
             this.teachersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.teachersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.iD_TeacherTextBox = new System.Windows.Forms.TextBox();
             this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.firstnameTextBox = new System.Windows.Forms.TextBox();
@@ -61,6 +54,13 @@
             this.workExperienceMonthsTextBox = new System.Windows.Forms.TextBox();
             this.competenciesTextBox = new System.Windows.Forms.TextBox();
             this.salaryTextBox = new System.Windows.Forms.TextBox();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.teachersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             iD_TeacherLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
             firstnameLabel = new System.Windows.Forms.Label();
@@ -73,6 +73,69 @@
             ((System.ComponentModel.ISupportInitialize)(this.teachersBindingNavigator)).BeginInit();
             this.teachersBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // iD_TeacherLabel
+            // 
+            iD_TeacherLabel.AutoSize = true;
+            iD_TeacherLabel.Location = new System.Drawing.Point(12, 35);
+            iD_TeacherLabel.Name = "iD_TeacherLabel";
+            iD_TeacherLabel.Size = new System.Drawing.Size(64, 13);
+            iD_TeacherLabel.TabIndex = 1;
+            iD_TeacherLabel.Text = "ID Teacher:";
+            // 
+            // surnameLabel
+            // 
+            surnameLabel.AutoSize = true;
+            surnameLabel.Location = new System.Drawing.Point(12, 61);
+            surnameLabel.Name = "surnameLabel";
+            surnameLabel.Size = new System.Drawing.Size(52, 13);
+            surnameLabel.TabIndex = 3;
+            surnameLabel.Text = "Surname:";
+            // 
+            // firstnameLabel
+            // 
+            firstnameLabel.AutoSize = true;
+            firstnameLabel.Location = new System.Drawing.Point(12, 87);
+            firstnameLabel.Name = "firstnameLabel";
+            firstnameLabel.Size = new System.Drawing.Size(55, 13);
+            firstnameLabel.TabIndex = 5;
+            firstnameLabel.Text = "Firstname:";
+            // 
+            // middlenameLabel
+            // 
+            middlenameLabel.AutoSize = true;
+            middlenameLabel.Location = new System.Drawing.Point(12, 113);
+            middlenameLabel.Name = "middlenameLabel";
+            middlenameLabel.Size = new System.Drawing.Size(67, 13);
+            middlenameLabel.TabIndex = 7;
+            middlenameLabel.Text = "Middlename:";
+            // 
+            // workExperienceMonthsLabel
+            // 
+            workExperienceMonthsLabel.AutoSize = true;
+            workExperienceMonthsLabel.Location = new System.Drawing.Point(12, 139);
+            workExperienceMonthsLabel.Name = "workExperienceMonthsLabel";
+            workExperienceMonthsLabel.Size = new System.Drawing.Size(130, 13);
+            workExperienceMonthsLabel.TabIndex = 9;
+            workExperienceMonthsLabel.Text = "Work Experience Months:";
+            // 
+            // competenciesLabel
+            // 
+            competenciesLabel.AutoSize = true;
+            competenciesLabel.Location = new System.Drawing.Point(12, 165);
+            competenciesLabel.Name = "competenciesLabel";
+            competenciesLabel.Size = new System.Drawing.Size(77, 13);
+            competenciesLabel.TabIndex = 11;
+            competenciesLabel.Text = "Competencies:";
+            // 
+            // salaryLabel
+            // 
+            salaryLabel.AutoSize = true;
+            salaryLabel.Location = new System.Drawing.Point(12, 191);
+            salaryLabel.Name = "salaryLabel";
+            salaryLabel.Size = new System.Drawing.Size(39, 13);
+            salaryLabel.TabIndex = 13;
+            salaryLabel.Text = "Salary:";
             // 
             // workHeadTeacherDataSet
             // 
@@ -130,23 +193,12 @@
             this.teachersBindingNavigator.TabIndex = 0;
             this.teachersBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorMoveFirstItem
+            // bindingNavigatorCountItem
             // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorSeparator
             // 
@@ -163,40 +215,85 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // iD_TeacherTextBox
+            // 
+            this.iD_TeacherTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.iD_TeacherTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "ID_Teacher", true));
+            this.iD_TeacherTextBox.Location = new System.Drawing.Point(148, 32);
+            this.iD_TeacherTextBox.Name = "iD_TeacherTextBox";
+            this.iD_TeacherTextBox.Size = new System.Drawing.Size(224, 20);
+            this.iD_TeacherTextBox.TabIndex = 2;
+            // 
+            // surnameTextBox
+            // 
+            this.surnameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Surname", true));
+            this.surnameTextBox.Location = new System.Drawing.Point(148, 58);
+            this.surnameTextBox.Name = "surnameTextBox";
+            this.surnameTextBox.Size = new System.Drawing.Size(224, 20);
+            this.surnameTextBox.TabIndex = 4;
+            // 
+            // firstnameTextBox
+            // 
+            this.firstnameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Firstname", true));
+            this.firstnameTextBox.Location = new System.Drawing.Point(148, 84);
+            this.firstnameTextBox.Name = "firstnameTextBox";
+            this.firstnameTextBox.Size = new System.Drawing.Size(224, 20);
+            this.firstnameTextBox.TabIndex = 6;
+            // 
+            // middlenameTextBox
+            // 
+            this.middlenameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.middlenameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Middlename", true));
+            this.middlenameTextBox.Location = new System.Drawing.Point(148, 110);
+            this.middlenameTextBox.Name = "middlenameTextBox";
+            this.middlenameTextBox.Size = new System.Drawing.Size(224, 20);
+            this.middlenameTextBox.TabIndex = 8;
+            // 
+            // workExperienceMonthsTextBox
+            // 
+            this.workExperienceMonthsTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.workExperienceMonthsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "WorkExperienceMonths", true));
+            this.workExperienceMonthsTextBox.Location = new System.Drawing.Point(148, 136);
+            this.workExperienceMonthsTextBox.Name = "workExperienceMonthsTextBox";
+            this.workExperienceMonthsTextBox.Size = new System.Drawing.Size(224, 20);
+            this.workExperienceMonthsTextBox.TabIndex = 10;
+            // 
+            // competenciesTextBox
+            // 
+            this.competenciesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.competenciesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Competencies", true));
+            this.competenciesTextBox.Location = new System.Drawing.Point(148, 162);
+            this.competenciesTextBox.Name = "competenciesTextBox";
+            this.competenciesTextBox.Size = new System.Drawing.Size(224, 20);
+            this.competenciesTextBox.TabIndex = 12;
+            // 
+            // salaryTextBox
+            // 
+            this.salaryTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Salary", true));
+            this.salaryTextBox.Location = new System.Drawing.Point(148, 188);
+            this.salaryTextBox.Name = "salaryTextBox";
+            this.salaryTextBox.Size = new System.Drawing.Size(224, 20);
+            this.salaryTextBox.TabIndex = 14;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -216,6 +313,42 @@
             this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
+            // 
             // teachersBindingNavigatorSaveItem
             // 
             this.teachersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -224,139 +357,6 @@
             this.teachersBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.teachersBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.teachersBindingNavigatorSaveItem.Click += new System.EventHandler(this.teachersBindingNavigatorSaveItem_Click_1);
-            // 
-            // iD_TeacherLabel
-            // 
-            iD_TeacherLabel.AutoSize = true;
-            iD_TeacherLabel.Location = new System.Drawing.Point(12, 35);
-            iD_TeacherLabel.Name = "iD_TeacherLabel";
-            iD_TeacherLabel.Size = new System.Drawing.Size(64, 13);
-            iD_TeacherLabel.TabIndex = 1;
-            iD_TeacherLabel.Text = "ID Teacher:";
-            // 
-            // iD_TeacherTextBox
-            // 
-            this.iD_TeacherTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iD_TeacherTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "ID_Teacher", true));
-            this.iD_TeacherTextBox.Location = new System.Drawing.Point(148, 32);
-            this.iD_TeacherTextBox.Name = "iD_TeacherTextBox";
-            this.iD_TeacherTextBox.Size = new System.Drawing.Size(224, 20);
-            this.iD_TeacherTextBox.TabIndex = 2;
-            // 
-            // surnameLabel
-            // 
-            surnameLabel.AutoSize = true;
-            surnameLabel.Location = new System.Drawing.Point(12, 61);
-            surnameLabel.Name = "surnameLabel";
-            surnameLabel.Size = new System.Drawing.Size(52, 13);
-            surnameLabel.TabIndex = 3;
-            surnameLabel.Text = "Surname:";
-            // 
-            // surnameTextBox
-            // 
-            this.surnameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(148, 58);
-            this.surnameTextBox.Name = "surnameTextBox";
-            this.surnameTextBox.Size = new System.Drawing.Size(224, 20);
-            this.surnameTextBox.TabIndex = 4;
-            // 
-            // firstnameLabel
-            // 
-            firstnameLabel.AutoSize = true;
-            firstnameLabel.Location = new System.Drawing.Point(12, 87);
-            firstnameLabel.Name = "firstnameLabel";
-            firstnameLabel.Size = new System.Drawing.Size(55, 13);
-            firstnameLabel.TabIndex = 5;
-            firstnameLabel.Text = "Firstname:";
-            // 
-            // firstnameTextBox
-            // 
-            this.firstnameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.firstnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Firstname", true));
-            this.firstnameTextBox.Location = new System.Drawing.Point(148, 84);
-            this.firstnameTextBox.Name = "firstnameTextBox";
-            this.firstnameTextBox.Size = new System.Drawing.Size(224, 20);
-            this.firstnameTextBox.TabIndex = 6;
-            // 
-            // middlenameLabel
-            // 
-            middlenameLabel.AutoSize = true;
-            middlenameLabel.Location = new System.Drawing.Point(12, 113);
-            middlenameLabel.Name = "middlenameLabel";
-            middlenameLabel.Size = new System.Drawing.Size(67, 13);
-            middlenameLabel.TabIndex = 7;
-            middlenameLabel.Text = "Middlename:";
-            // 
-            // middlenameTextBox
-            // 
-            this.middlenameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.middlenameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Middlename", true));
-            this.middlenameTextBox.Location = new System.Drawing.Point(148, 110);
-            this.middlenameTextBox.Name = "middlenameTextBox";
-            this.middlenameTextBox.Size = new System.Drawing.Size(224, 20);
-            this.middlenameTextBox.TabIndex = 8;
-            // 
-            // workExperienceMonthsLabel
-            // 
-            workExperienceMonthsLabel.AutoSize = true;
-            workExperienceMonthsLabel.Location = new System.Drawing.Point(12, 139);
-            workExperienceMonthsLabel.Name = "workExperienceMonthsLabel";
-            workExperienceMonthsLabel.Size = new System.Drawing.Size(130, 13);
-            workExperienceMonthsLabel.TabIndex = 9;
-            workExperienceMonthsLabel.Text = "Work Experience Months:";
-            // 
-            // workExperienceMonthsTextBox
-            // 
-            this.workExperienceMonthsTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.workExperienceMonthsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "WorkExperienceMonths", true));
-            this.workExperienceMonthsTextBox.Location = new System.Drawing.Point(148, 136);
-            this.workExperienceMonthsTextBox.Name = "workExperienceMonthsTextBox";
-            this.workExperienceMonthsTextBox.Size = new System.Drawing.Size(224, 20);
-            this.workExperienceMonthsTextBox.TabIndex = 10;
-            // 
-            // competenciesLabel
-            // 
-            competenciesLabel.AutoSize = true;
-            competenciesLabel.Location = new System.Drawing.Point(12, 165);
-            competenciesLabel.Name = "competenciesLabel";
-            competenciesLabel.Size = new System.Drawing.Size(77, 13);
-            competenciesLabel.TabIndex = 11;
-            competenciesLabel.Text = "Competencies:";
-            // 
-            // competenciesTextBox
-            // 
-            this.competenciesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.competenciesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Competencies", true));
-            this.competenciesTextBox.Location = new System.Drawing.Point(148, 162);
-            this.competenciesTextBox.Name = "competenciesTextBox";
-            this.competenciesTextBox.Size = new System.Drawing.Size(224, 20);
-            this.competenciesTextBox.TabIndex = 12;
-            // 
-            // salaryLabel
-            // 
-            salaryLabel.AutoSize = true;
-            salaryLabel.Location = new System.Drawing.Point(12, 191);
-            salaryLabel.Name = "salaryLabel";
-            salaryLabel.Size = new System.Drawing.Size(39, 13);
-            salaryLabel.TabIndex = 13;
-            salaryLabel.Text = "Salary:";
-            // 
-            // salaryTextBox
-            // 
-            this.salaryTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.teachersBindingSource, "Salary", true));
-            this.salaryTextBox.Location = new System.Drawing.Point(148, 188);
-            this.salaryTextBox.Name = "salaryTextBox";
-            this.salaryTextBox.Size = new System.Drawing.Size(224, 20);
-            this.salaryTextBox.TabIndex = 14;
             // 
             // TeacherForm
             // 
@@ -378,6 +378,7 @@
             this.Controls.Add(salaryLabel);
             this.Controls.Add(this.salaryTextBox);
             this.Controls.Add(this.teachersBindingNavigator);
+            this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "TeacherForm";
             this.Text = "Преподаватели";
             this.Load += new System.EventHandler(this.TeacherForm_Load);

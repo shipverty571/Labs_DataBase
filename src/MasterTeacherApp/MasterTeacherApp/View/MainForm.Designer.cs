@@ -40,6 +40,7 @@
             this.StudyPlanToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DisciplineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ClassToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.MarkToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TeacherMenuStrip.SuspendLayout();
@@ -52,7 +53,7 @@
             this.FileToolStripMenuItem});
             this.TeacherMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.TeacherMenuStrip.Name = "TeacherMenuStrip";
-            this.TeacherMenuStrip.Size = new System.Drawing.Size(800, 24);
+            this.TeacherMenuStrip.Size = new System.Drawing.Size(584, 24);
             this.TeacherMenuStrip.TabIndex = 0;
             this.TeacherMenuStrip.Text = "menuStrip1";
             // 
@@ -80,10 +81,11 @@
             this.TeacherToolStripButton,
             this.StudyPlanToolStripButton,
             this.DisciplineToolStripButton,
-            this.ClassToolStripButton});
+            this.ClassToolStripButton,
+            this.MarkToolStripButton});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 24);
             this.MainToolStrip.Name = "MainToolStrip";
-            this.MainToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.MainToolStrip.Size = new System.Drawing.Size(584, 25);
             this.MainToolStrip.TabIndex = 1;
             this.MainToolStrip.Text = "toolStrip1";
             // 
@@ -154,6 +156,16 @@
             this.ClassToolStripButton.Text = "Классы";
             this.ClassToolStripButton.Click += new System.EventHandler(this.ClassToolStripButton_Click);
             // 
+            // MarkToolStripButton
+            // 
+            this.MarkToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MarkToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.mark_16x16;
+            this.MarkToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.MarkToolStripButton.Name = "MarkToolStripButton";
+            this.MarkToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.MarkToolStripButton.Text = "Оценки";
+            this.MarkToolStripButton.Click += new System.EventHandler(this.MarkToolStripButton_Click);
+            // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.logout_16x16;
@@ -176,11 +188,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.MainToolStrip);
             this.Controls.Add(this.TeacherMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.TeacherMenuStrip;
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "MainForm";
             this.Text = "MasterTeacherApp";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
@@ -208,6 +221,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton DisciplineToolStripButton;
         private System.Windows.Forms.ToolStripButton ClassToolStripButton;
+        private System.Windows.Forms.ToolStripButton MarkToolStripButton;
     }
 }
 

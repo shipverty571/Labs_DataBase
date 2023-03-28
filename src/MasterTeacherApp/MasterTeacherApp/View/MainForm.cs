@@ -48,5 +48,10 @@ namespace MasterTeacherApp.View
         {
             ClassForm.Instance.ShowForm();
         }
+
+        private void MarkToolStripButton_Click(object sender, EventArgs e)
+        {
+            MarkForm.Instance.ShowForm();
+        }
     }
 }

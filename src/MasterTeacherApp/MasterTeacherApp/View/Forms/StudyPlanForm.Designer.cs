@@ -37,9 +37,9 @@
             this.studyPlansTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.StudyPlansTableAdapter();
             this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
             this.studyPlansBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.iD_StudyPlanTextBox = new System.Windows.Forms.TextBox();
@@ -58,6 +58,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.studyPlansBindingNavigator)).BeginInit();
             this.studyPlansBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // iD_StudyPlanLabel
+            // 
+            iD_StudyPlanLabel.AutoSize = true;
+            iD_StudyPlanLabel.Location = new System.Drawing.Point(12, 34);
+            iD_StudyPlanLabel.Name = "iD_StudyPlanLabel";
+            iD_StudyPlanLabel.Size = new System.Drawing.Size(75, 13);
+            iD_StudyPlanLabel.TabIndex = 1;
+            iD_StudyPlanLabel.Text = "ID Study Plan:";
+            // 
+            // countLessonHoursLabel
+            // 
+            countLessonHoursLabel.AutoSize = true;
+            countLessonHoursLabel.Location = new System.Drawing.Point(12, 60);
+            countLessonHoursLabel.Name = "countLessonHoursLabel";
+            countLessonHoursLabel.Size = new System.Drawing.Size(106, 13);
+            countLessonHoursLabel.TabIndex = 3;
+            countLessonHoursLabel.Text = "Count Lesson Hours:";
             // 
             // workHeadTeacherDataSet
             // 
@@ -115,6 +133,13 @@
             this.studyPlansBindingNavigator.TabIndex = 0;
             this.studyPlansBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -130,31 +155,15 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // iD_StudyPlanLabel
-            // 
-            iD_StudyPlanLabel.AutoSize = true;
-            iD_StudyPlanLabel.Location = new System.Drawing.Point(12, 34);
-            iD_StudyPlanLabel.Name = "iD_StudyPlanLabel";
-            iD_StudyPlanLabel.Size = new System.Drawing.Size(75, 13);
-            iD_StudyPlanLabel.TabIndex = 1;
-            iD_StudyPlanLabel.Text = "ID Study Plan:";
             // 
             // iD_StudyPlanTextBox
             // 
@@ -165,15 +174,6 @@
             this.iD_StudyPlanTextBox.Name = "iD_StudyPlanTextBox";
             this.iD_StudyPlanTextBox.Size = new System.Drawing.Size(198, 20);
             this.iD_StudyPlanTextBox.TabIndex = 2;
-            // 
-            // countLessonHoursLabel
-            // 
-            countLessonHoursLabel.AutoSize = true;
-            countLessonHoursLabel.Location = new System.Drawing.Point(12, 60);
-            countLessonHoursLabel.Name = "countLessonHoursLabel";
-            countLessonHoursLabel.Size = new System.Drawing.Size(106, 13);
-            countLessonHoursLabel.TabIndex = 3;
-            countLessonHoursLabel.Text = "Count Lesson Hours:";
             // 
             // countLessonHoursTextBox
             // 
@@ -258,6 +258,7 @@
             this.Controls.Add(countLessonHoursLabel);
             this.Controls.Add(this.countLessonHoursTextBox);
             this.Controls.Add(this.studyPlansBindingNavigator);
+            this.MinimumSize = new System.Drawing.Size(350, 150);
             this.Name = "StudyPlanForm";
             this.Text = "Учебные планы";
             this.Load += new System.EventHandler(this.StudyPlanForm_Load);
