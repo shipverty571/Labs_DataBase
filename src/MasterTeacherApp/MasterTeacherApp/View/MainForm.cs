@@ -29,6 +29,7 @@ namespace MasterTeacherApp.View
                 "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        #region Clicks
         private void TeacherToolStripButton_Click(object sender, EventArgs e)
         {
             TeacherForm.Instance.ShowForm();
@@ -63,5 +64,6 @@ namespace MasterTeacherApp.View
         {
             StudentForm.Instance.ShowForm();
         }
+        #endregion
     }
 }
