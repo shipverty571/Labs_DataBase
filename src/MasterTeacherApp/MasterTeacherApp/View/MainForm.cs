@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MasterTeacherApp.View.Forms;
 
 namespace View.MasterTeacherApp
 {
@@ -27,6 +28,11 @@ namespace View.MasterTeacherApp
                 "(C)ТУСУР, каф. КСУП, Борнашов Валентин Евгеньевич, группа 571-2, 2023г.",
                 "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void TeacherToolStripButton_Click(object sender, EventArgs e)
+        {
+            TeacherForm.Instance.ShowForm();
         }
     }
 }
