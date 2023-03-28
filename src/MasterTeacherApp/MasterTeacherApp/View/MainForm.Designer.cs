@@ -41,6 +41,7 @@
             this.DisciplineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ClassToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.MarkToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.TimetableToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TeacherMenuStrip.SuspendLayout();
@@ -82,7 +83,8 @@
             this.StudyPlanToolStripButton,
             this.DisciplineToolStripButton,
             this.ClassToolStripButton,
-            this.MarkToolStripButton});
+            this.MarkToolStripButton,
+            this.TimetableToolStripButton});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 24);
             this.MainToolStrip.Name = "MainToolStrip";
             this.MainToolStrip.Size = new System.Drawing.Size(584, 25);
@@ -166,6 +168,16 @@
             this.MarkToolStripButton.Text = "Оценки";
             this.MarkToolStripButton.Click += new System.EventHandler(this.MarkToolStripButton_Click);
             // 
+            // TimetableToolStripButton
+            // 
+            this.TimetableToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.TimetableToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.timetable_16x16;
+            this.TimetableToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TimetableToolStripButton.Name = "TimetableToolStripButton";
+            this.TimetableToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.TimetableToolStripButton.Text = "toolStripButton1";
+            this.TimetableToolStripButton.Click += new System.EventHandler(this.TimetableToolStripButton_Click);
+            // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.logout_16x16;
@@ -222,6 +234,7 @@
         private System.Windows.Forms.ToolStripButton DisciplineToolStripButton;
         private System.Windows.Forms.ToolStripButton ClassToolStripButton;
         private System.Windows.Forms.ToolStripButton MarkToolStripButton;
+        private System.Windows.Forms.ToolStripButton TimetableToolStripButton;
     }
 }
 

@@ -53,5 +53,10 @@ namespace MasterTeacherApp.View
         {
             MarkForm.Instance.ShowForm();
         }
+
+        private void TimetableToolStripButton_Click(object sender, EventArgs e)
+        {
+            TimetableForm.Instance.ShowForm();
+        }
     }
 }
