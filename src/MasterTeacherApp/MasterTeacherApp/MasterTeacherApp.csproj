@@ -70,6 +70,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -102,6 +103,8 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resource\about_16x16.png" />
+    <Content Include="Resource\logout_16x16.png" />
     <Content Include="teacher_64x64.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
