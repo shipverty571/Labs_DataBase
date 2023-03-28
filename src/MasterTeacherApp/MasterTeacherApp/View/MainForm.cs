@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using MasterTeacherApp.View.Forms;
 
-namespace View.MasterTeacherApp
+namespace MasterTeacherApp.View
 {
     public partial class MainForm : Form
     {
@@ -27,7 +27,6 @@ namespace View.MasterTeacherApp
             MessageBox.Show(
                 "(C)ТУСУР, каф. КСУП, Борнашов Валентин Евгеньевич, группа 571-2, 2023г.",
                 "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
         }
 
         private void TeacherToolStripButton_Click(object sender, EventArgs e)
@@ -43,6 +42,11 @@ namespace View.MasterTeacherApp
         private void DisciplineToolStripButton_Click(object sender, EventArgs e)
         {
             DisciplineForm.Instance.ShowForm();
+        }
+
+        private void ClassToolStripButton_Click(object sender, EventArgs e)
+        {
+            ClassForm.Instance.ShowForm();
         }
     }
 }
