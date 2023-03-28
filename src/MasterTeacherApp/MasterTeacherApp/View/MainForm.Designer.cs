@@ -36,8 +36,11 @@
             this.ExitToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.AboutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.TeacherToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.StudyPlanToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.DIsciplineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.TeacherMenuStrip.SuspendLayout();
             this.MainToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -72,7 +75,10 @@
             this.MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ExitToolStripButton,
             this.AboutToolStripButton,
-            this.TeacherToolStripButton});
+            this.toolStripSeparator2,
+            this.TeacherToolStripButton,
+            this.StudyPlanToolStripButton,
+            this.DIsciplineToolStripButton});
             this.MainToolStrip.Location = new System.Drawing.Point(0, 24);
             this.MainToolStrip.Name = "MainToolStrip";
             this.MainToolStrip.Size = new System.Drawing.Size(800, 25);
@@ -108,8 +114,18 @@
             this.TeacherToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TeacherToolStripButton.Name = "TeacherToolStripButton";
             this.TeacherToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.TeacherToolStripButton.Text = "toolStripButton1";
+            this.TeacherToolStripButton.Text = "Преподаватели";
             this.TeacherToolStripButton.Click += new System.EventHandler(this.TeacherToolStripButton_Click);
+            // 
+            // StudyPlanToolStripButton
+            // 
+            this.StudyPlanToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.StudyPlanToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.studyPlan_16x16;
+            this.StudyPlanToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.StudyPlanToolStripButton.Name = "StudyPlanToolStripButton";
+            this.StudyPlanToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.StudyPlanToolStripButton.Text = "Учебные планы";
+            this.StudyPlanToolStripButton.Click += new System.EventHandler(this.StudyPlanToolStripButton_Click);
             // 
             // ExitToolStripMenuItem
             // 
@@ -128,6 +144,20 @@
             this.AboutToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.AboutToolStripMenuItem.Text = "О программе...";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // DIsciplineToolStripButton
+            // 
+            this.DIsciplineToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DIsciplineToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DIsciplineToolStripButton.Image")));
+            this.DIsciplineToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.DIsciplineToolStripButton.Name = "DIsciplineToolStripButton";
+            this.DIsciplineToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.DIsciplineToolStripButton.Text = "Дисциплины";
             // 
             // MainForm
             // 
@@ -161,6 +191,9 @@
         private System.Windows.Forms.ToolStripButton ExitToolStripButton;
         private System.Windows.Forms.ToolStripButton AboutToolStripButton;
         private System.Windows.Forms.ToolStripButton TeacherToolStripButton;
+        private System.Windows.Forms.ToolStripButton StudyPlanToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton DIsciplineToolStripButton;
     }
 }
 

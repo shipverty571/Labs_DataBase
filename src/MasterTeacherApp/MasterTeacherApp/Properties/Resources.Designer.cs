@@ -83,6 +83,16 @@ namespace MasterTeacherApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap studyPlan_16x16 {
+            get {
+                object obj = ResourceManager.GetObject("studyPlan_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap teacher_16x16 {
             get {
                 object obj = ResourceManager.GetObject("teacher_16x16", resourceCulture);
