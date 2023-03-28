@@ -34,7 +34,11 @@
             this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainToolStrip = new System.Windows.Forms.ToolStrip();
+            this.ExitToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.AboutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.TeacherMenuStrip.SuspendLayout();
+            this.MainToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // TeacherMenuStrip
@@ -80,11 +84,45 @@
             this.AboutToolStripMenuItem.Text = "О программе...";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
+            // MainToolStrip
+            // 
+            this.MainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ExitToolStripButton,
+            this.AboutToolStripButton});
+            this.MainToolStrip.Location = new System.Drawing.Point(0, 24);
+            this.MainToolStrip.Name = "MainToolStrip";
+            this.MainToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.MainToolStrip.TabIndex = 1;
+            this.MainToolStrip.Text = "toolStrip1";
+            // 
+            // ExitToolStripButton
+            // 
+            this.ExitToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ExitToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.logout_16x16;
+            this.ExitToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ExitToolStripButton.Name = "ExitToolStripButton";
+            this.ExitToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.ExitToolStripButton.Text = "toolStripButton1";
+            this.ExitToolStripButton.ToolTipText = "Закрыть программу";
+            this.ExitToolStripButton.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
+            // AboutToolStripButton
+            // 
+            this.AboutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.AboutToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.about_16x16;
+            this.AboutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.AboutToolStripButton.Name = "AboutToolStripButton";
+            this.AboutToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.AboutToolStripButton.Text = "toolStripButton1";
+            this.AboutToolStripButton.ToolTipText = "О программе";
+            this.AboutToolStripButton.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MainToolStrip);
             this.Controls.Add(this.TeacherMenuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.TeacherMenuStrip;
@@ -93,6 +131,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.TeacherMenuStrip.ResumeLayout(false);
             this.TeacherMenuStrip.PerformLayout();
+            this.MainToolStrip.ResumeLayout(false);
+            this.MainToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +145,9 @@
     private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
     private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
-}
+        private System.Windows.Forms.ToolStrip MainToolStrip;
+        private System.Windows.Forms.ToolStripButton ExitToolStripButton;
+        private System.Windows.Forms.ToolStripButton AboutToolStripButton;
+    }
 }
 
