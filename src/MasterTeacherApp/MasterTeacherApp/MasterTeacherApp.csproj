@@ -67,6 +67,12 @@
     <Compile Include="View\Forms\MarkForm.Designer.cs">
       <DependentUpon>MarkForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\StudyPlanForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <EmbeddedResource Include="View\Forms\MarkForm.resx">
       <DependentUpon>MarkForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\StudyPlanForm.resx">
       <DependentUpon>StudyPlanForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +171,7 @@
     <Content Include="Resource\discipline_16x16.png" />
     <Content Include="Resource\logout_16x16.png" />
     <Content Include="Resource\mark_16x16.png" />
+    <Content Include="Resource\student_16x16.png" />
     <Content Include="Resource\studyPlan_16x16.png" />
     <Content Include="Resource\teacher_16x16.png" />
     <Content Include="Resource\timetable_16x16.png" />

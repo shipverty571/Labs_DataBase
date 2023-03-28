@@ -142,4 +142,7 @@
   <data name="timetable_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resource\timetable_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="student_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resource\student_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
