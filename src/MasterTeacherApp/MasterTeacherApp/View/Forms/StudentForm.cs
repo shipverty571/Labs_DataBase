@@ -16,10 +16,7 @@ namespace MasterTeacherApp.View.Forms
         {
             get
             {
-                if (_instance == null || _instance.IsDisposed)
-                {
-                    _instance = new StudentForm();
-                }
+                if (_instance == null || _instance.IsDisposed) _instance = new StudentForm();
                 return _instance;
             }
         }

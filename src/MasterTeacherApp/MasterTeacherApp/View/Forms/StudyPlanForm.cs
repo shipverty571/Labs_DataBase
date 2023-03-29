@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MasterTeacherApp.View.Forms
@@ -19,23 +12,20 @@ namespace MasterTeacherApp.View.Forms
             InitializeComponent();
         }
 
-        private void studyPlansBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.studyPlansBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.workHeadTeacherDataSet);
-        }
-
         public static StudyPlanForm Instance
         {
             get
             {
-                if (_instance == null || _instance.IsDisposed)
-                {
-                    _instance = new StudyPlanForm();
-                }
+                if (_instance == null || _instance.IsDisposed) _instance = new StudyPlanForm();
                 return _instance;
             }
+        }
+
+        private void studyPlansBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            Validate();
+            studyPlansBindingSource.EndEdit();
+            tableAdapterManager.UpdateAll(workHeadTeacherDataSet);
         }
 
         public void ShowForm()
@@ -47,8 +37,7 @@ namespace MasterTeacherApp.View.Forms
         private void StudyPlanForm_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "workHeadTeacherDataSet.StudyPlans". При необходимости она может быть перемещена или удалена.
-            this.studyPlansTableAdapter.Fill(this.workHeadTeacherDataSet.StudyPlans);
-
+            studyPlansTableAdapter.Fill(workHeadTeacherDataSet.StudyPlans);
         }
     }
 }

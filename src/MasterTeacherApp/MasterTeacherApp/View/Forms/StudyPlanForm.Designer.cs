@@ -37,20 +37,20 @@
             this.studyPlansTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.StudyPlansTableAdapter();
             this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
             this.studyPlansBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.iD_StudyPlanTextBox = new System.Windows.Forms.TextBox();
-            this.countLessonHoursTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.studyPlansBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.iD_StudyPlanTextBox = new System.Windows.Forms.TextBox();
+            this.countLessonHoursTextBox = new System.Windows.Forms.TextBox();
             iD_StudyPlanLabel = new System.Windows.Forms.Label();
             countLessonHoursLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.workHeadTeacherDataSet)).BeginInit();
@@ -133,58 +133,6 @@
             this.studyPlansBindingNavigator.TabIndex = 0;
             this.studyPlansBindingNavigator.Text = "bindingNavigator1";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // iD_StudyPlanTextBox
-            // 
-            this.iD_StudyPlanTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iD_StudyPlanTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "ID_StudyPlan", true));
-            this.iD_StudyPlanTextBox.Location = new System.Drawing.Point(124, 31);
-            this.iD_StudyPlanTextBox.Name = "iD_StudyPlanTextBox";
-            this.iD_StudyPlanTextBox.Size = new System.Drawing.Size(198, 20);
-            this.iD_StudyPlanTextBox.TabIndex = 2;
-            // 
-            // countLessonHoursTextBox
-            // 
-            this.countLessonHoursTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.countLessonHoursTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "CountLessonHours", true));
-            this.countLessonHoursTextBox.Location = new System.Drawing.Point(124, 57);
-            this.countLessonHoursTextBox.Name = "countLessonHoursTextBox";
-            this.countLessonHoursTextBox.Size = new System.Drawing.Size(198, 20);
-            this.countLessonHoursTextBox.TabIndex = 4;
-            // 
             // bindingNavigatorAddNewItem
             // 
             this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -193,6 +141,13 @@
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
             // bindingNavigatorDeleteItem
             // 
@@ -221,6 +176,26 @@
             this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Положение";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // bindingNavigatorMoveNextItem
             // 
             this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -239,6 +214,11 @@
             this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
             // studyPlansBindingNavigatorSaveItem
             // 
             this.studyPlansBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -247,6 +227,26 @@
             this.studyPlansBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.studyPlansBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.studyPlansBindingNavigatorSaveItem.Click += new System.EventHandler(this.studyPlansBindingNavigatorSaveItem_Click);
+            // 
+            // iD_StudyPlanTextBox
+            // 
+            this.iD_StudyPlanTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.iD_StudyPlanTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "ID_StudyPlan", true));
+            this.iD_StudyPlanTextBox.Location = new System.Drawing.Point(124, 31);
+            this.iD_StudyPlanTextBox.Name = "iD_StudyPlanTextBox";
+            this.iD_StudyPlanTextBox.Size = new System.Drawing.Size(198, 20);
+            this.iD_StudyPlanTextBox.TabIndex = 2;
+            // 
+            // countLessonHoursTextBox
+            // 
+            this.countLessonHoursTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.countLessonHoursTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "CountLessonHours", true));
+            this.countLessonHoursTextBox.Location = new System.Drawing.Point(124, 57);
+            this.countLessonHoursTextBox.Name = "countLessonHoursTextBox";
+            this.countLessonHoursTextBox.Size = new System.Drawing.Size(198, 20);
+            this.countLessonHoursTextBox.TabIndex = 4;
             // 
             // StudyPlanForm
             // 
@@ -258,6 +258,7 @@
             this.Controls.Add(countLessonHoursLabel);
             this.Controls.Add(this.countLessonHoursTextBox);
             this.Controls.Add(this.studyPlansBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(350, 150);
             this.Name = "StudyPlanForm";
             this.Text = "Учебные планы";
