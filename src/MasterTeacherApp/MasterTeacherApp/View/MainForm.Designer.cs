@@ -31,20 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.TeacherMenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainToolStrip = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.TeacherToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.StudyPlanToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DisciplineToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.ClassToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.MarkToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.TimetableToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.StudentToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.ExitToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.AboutToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.StudentToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TeacherMenuStrip.SuspendLayout();
             this.MainToolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -69,10 +69,28 @@
             this.FileToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.FileToolStripMenuItem.Text = "Файл";
             // 
+            // ExitToolStripMenuItem
+            // 
+            this.ExitToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.logout_16x16;
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ExitToolStripMenuItem.Text = "Выход";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(188, 6);
+            // 
+            // AboutToolStripMenuItem
+            // 
+            this.AboutToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.about_16x16;
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I)));
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.AboutToolStripMenuItem.Text = "О программе...";
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // MainToolStrip
             // 
@@ -92,11 +110,6 @@
             this.MainToolStrip.Size = new System.Drawing.Size(584, 25);
             this.MainToolStrip.TabIndex = 1;
             this.MainToolStrip.Text = "toolStrip1";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // TeacherToolStripButton
             // 
@@ -155,8 +168,23 @@
             this.TimetableToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.TimetableToolStripButton.Name = "TimetableToolStripButton";
             this.TimetableToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.TimetableToolStripButton.Text = "toolStripButton1";
+            this.TimetableToolStripButton.Text = "Расписание";
             this.TimetableToolStripButton.Click += new System.EventHandler(this.TimetableToolStripButton_Click);
+            // 
+            // StudentToolStripButton
+            // 
+            this.StudentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.StudentToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.student_16x16;
+            this.StudentToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.StudentToolStripButton.Name = "StudentToolStripButton";
+            this.StudentToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.StudentToolStripButton.Text = "Ученики";
+            this.StudentToolStripButton.Click += new System.EventHandler(this.StudentToolStripButton_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // ExitToolStripButton
             // 
@@ -179,34 +207,6 @@
             this.AboutToolStripButton.Text = "toolStripButton1";
             this.AboutToolStripButton.ToolTipText = "О программе";
             this.AboutToolStripButton.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
-            // 
-            // StudentToolStripButton
-            // 
-            this.StudentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.StudentToolStripButton.Image = global::MasterTeacherApp.Properties.Resources.student_16x16;
-            this.StudentToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.StudentToolStripButton.Name = "StudentToolStripButton";
-            this.StudentToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.StudentToolStripButton.Text = "Ученики";
-            this.StudentToolStripButton.Click += new System.EventHandler(this.StudentToolStripButton_Click);
-            // 
-            // ExitToolStripMenuItem
-            // 
-            this.ExitToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.logout_16x16;
-            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.ExitToolStripMenuItem.Text = "Выход";
-            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
-            // 
-            // AboutToolStripMenuItem
-            // 
-            this.AboutToolStripMenuItem.Image = global::MasterTeacherApp.Properties.Resources.about_16x16;
-            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I)));
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.AboutToolStripMenuItem.Text = "О программе...";
-            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // MainForm
             // 
