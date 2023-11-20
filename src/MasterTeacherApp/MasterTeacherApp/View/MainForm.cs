@@ -9,6 +9,13 @@ namespace MasterTeacherApp.View
         public MainForm()
         {
             InitializeComponent();
+            Hide();
+            var authForm = new AuthForm();
+            var result = authForm.ShowDialog();
+            if (result == DialogResult.OK )
+            {
+                Show();
+            }
         }
 
         #region Clicks

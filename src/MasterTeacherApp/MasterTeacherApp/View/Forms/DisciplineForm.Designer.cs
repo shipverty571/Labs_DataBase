@@ -35,11 +35,11 @@
             System.Windows.Forms.Label classNumberLabel;
             System.Windows.Forms.Label studyPlanLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisciplineForm));
-            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
+            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFile();
             this.disciplinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplinesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter();
-            this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
-            this.marksTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.MarksTableAdapter();
+            this.disciplinesTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.DisciplinesTableAdapter();
+            this.tableAdapterManager = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager();
+            this.marksTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.MarksTableAdapter();
             this.disciplinesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -159,7 +159,7 @@
             this.tableAdapterManager.StudyPlansTableAdapter = null;
             this.tableAdapterManager.TeachersTableAdapter = null;
             this.tableAdapterManager.TimetablesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // marksTableAdapter
             // 
@@ -517,10 +517,10 @@
 
         #endregion
 
-        private Database.WorkHeadTeacherDataSet workHeadTeacherDataSet;
+        private Database.Work_Head_TeacherDataSetFile workHeadTeacherDataSet;
         private System.Windows.Forms.BindingSource disciplinesBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter disciplinesTableAdapter;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.DisciplinesTableAdapter disciplinesTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator disciplinesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -534,7 +534,7 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton disciplinesBindingNavigatorSaveItem;
-        private Database.WorkHeadTeacherDataSetTableAdapters.MarksTableAdapter marksTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.MarksTableAdapter marksTableAdapter;
         private System.Windows.Forms.TextBox iD_DisciplineTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.TextBox teacherTextBox;

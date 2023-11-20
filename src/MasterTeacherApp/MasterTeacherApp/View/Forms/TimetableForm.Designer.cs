@@ -36,10 +36,10 @@
             System.Windows.Forms.Label auditoriumLabel;
             System.Windows.Forms.Label dateLessonLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimetableForm));
-            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
+            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFile();
             this.timetablesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.timetablesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TimetablesTableAdapter();
-            this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
+            this.timetablesTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TimetablesTableAdapter();
+            this.tableAdapterManager = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager();
             this.timetablesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -149,7 +149,7 @@
             this.tableAdapterManager.StudyPlansTableAdapter = null;
             this.tableAdapterManager.TeachersTableAdapter = null;
             this.tableAdapterManager.TimetablesTableAdapter = this.timetablesTableAdapter;
-            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // timetablesBindingNavigator
             // 
@@ -371,10 +371,10 @@
 
         #endregion
 
-        private Database.WorkHeadTeacherDataSet workHeadTeacherDataSet;
+        private Database.Work_Head_TeacherDataSetFile workHeadTeacherDataSet;
         private System.Windows.Forms.BindingSource timetablesBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TimetablesTableAdapter timetablesTableAdapter;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TimetablesTableAdapter timetablesTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator timetablesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

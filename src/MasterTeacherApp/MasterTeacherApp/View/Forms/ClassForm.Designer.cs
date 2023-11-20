@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassForm));
-            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
+            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFile();
             this.classesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.classesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter();
-            this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
+            this.classesTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.ClassesTableAdapter();
+            this.tableAdapterManager = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager();
             this.classesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -84,7 +84,7 @@
             this.tableAdapterManager.StudyPlansTableAdapter = null;
             this.tableAdapterManager.TeachersTableAdapter = null;
             this.tableAdapterManager.TimetablesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // classesBindingNavigator
             // 
@@ -284,10 +284,10 @@
 
         #endregion
 
-        private Database.WorkHeadTeacherDataSet workHeadTeacherDataSet;
+        private Database.Work_Head_TeacherDataSetFile workHeadTeacherDataSet;
         private System.Windows.Forms.BindingSource classesBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter classesTableAdapter;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.ClassesTableAdapter classesTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator classesBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

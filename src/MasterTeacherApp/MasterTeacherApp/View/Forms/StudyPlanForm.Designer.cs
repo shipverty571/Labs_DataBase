@@ -32,10 +32,10 @@
             System.Windows.Forms.Label iD_StudyPlanLabel;
             System.Windows.Forms.Label countLessonHoursLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudyPlanForm));
-            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
+            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFile();
             this.studyPlansBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studyPlansTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.StudyPlansTableAdapter();
-            this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
+            this.studyPlansTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.StudyPlansTableAdapter();
+            this.tableAdapterManager = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager();
             this.studyPlansBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -57,9 +57,9 @@
             this.countLessonHoursTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.classesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter();
+            this.classesTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.ClassesTableAdapter();
             this.disciplinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.disciplinesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter();
+            this.disciplinesTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.DisciplinesTableAdapter();
             this.disciplinesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -120,7 +120,7 @@
             this.tableAdapterManager.StudyPlansTableAdapter = this.studyPlansTableAdapter;
             this.tableAdapterManager.TeachersTableAdapter = null;
             this.tableAdapterManager.TimetablesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // studyPlansBindingNavigator
             // 
@@ -420,10 +420,10 @@
 
         #endregion
 
-        private Database.WorkHeadTeacherDataSet workHeadTeacherDataSet;
+        private Database.Work_Head_TeacherDataSetFile workHeadTeacherDataSet;
         private System.Windows.Forms.BindingSource studyPlansBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.StudyPlansTableAdapter studyPlansTableAdapter;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.StudyPlansTableAdapter studyPlansTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator studyPlansBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -445,9 +445,9 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox toolStripFindTextBox;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter classesTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.ClassesTableAdapter classesTableAdapter;
         private System.Windows.Forms.BindingSource disciplinesBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter disciplinesTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.DisciplinesTableAdapter disciplinesTableAdapter;
         private System.Windows.Forms.DataGridView disciplinesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

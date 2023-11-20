@@ -37,10 +37,10 @@
             System.Windows.Forms.Label competenciesLabel;
             System.Windows.Forms.Label salaryLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeacherForm));
-            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.WorkHeadTeacherDataSet();
+            this.workHeadTeacherDataSet = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFile();
             this.teachersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teachersTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TeachersTableAdapter();
-            this.tableAdapterManager = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager();
+            this.teachersTableAdapter = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TeachersTableAdapter();
+            this.tableAdapterManager = new MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager();
             this.teachersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -161,7 +161,7 @@
             this.tableAdapterManager.StudyPlansTableAdapter = null;
             this.tableAdapterManager.TeachersTableAdapter = this.teachersTableAdapter;
             this.tableAdapterManager.TimetablesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = MasterTeacherApp.Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // teachersBindingNavigator
             // 
@@ -395,10 +395,10 @@
 
         #endregion
 
-        private Database.WorkHeadTeacherDataSet workHeadTeacherDataSet;
+        private Database.Work_Head_TeacherDataSetFile workHeadTeacherDataSet;
         private System.Windows.Forms.BindingSource teachersBindingSource;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TeachersTableAdapter teachersTableAdapter;
-        private Database.WorkHeadTeacherDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TeachersTableAdapter teachersTableAdapter;
+        private Database.Work_Head_TeacherDataSetFileTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator teachersBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

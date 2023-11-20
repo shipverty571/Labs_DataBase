@@ -26,11 +26,22 @@ namespace MasterTeacherApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-OVFICRT\\SQLEXPRESS;Initial Catalog=Work_Head_Teacher;Integrat" +
-            "ed Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-OVFICRT;Initial Catalog=Work_Head_Teacher;Integrated Security" +
+            "=True")]
         public string Work_Head_TeacherConnectionString {
             get {
                 return ((string)(this["Work_Head_TeacherConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-OVFICRT;Initial Catalog=Work_Head_Teacher;User ID=sa;Password" +
+            "=password123")]
+        public string Work_Head_TeacherConnectionString1 {
+            get {
+                return ((string)(this["Work_Head_TeacherConnectionString1"]));
             }
         }
     }
