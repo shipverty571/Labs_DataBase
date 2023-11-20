@@ -49,20 +49,39 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.studyPlansBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripFindTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.iD_StudyPlanTextBox = new System.Windows.Forms.TextBox();
             this.countLessonHoursTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.classesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter();
+            this.disciplinesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.disciplinesTableAdapter = new MasterTeacherApp.Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter();
+            this.disciplinesDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             iD_StudyPlanLabel = new System.Windows.Forms.Label();
             countLessonHoursLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.workHeadTeacherDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studyPlansBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studyPlansBindingNavigator)).BeginInit();
             this.studyPlansBindingNavigator.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // iD_StudyPlanLabel
             // 
             iD_StudyPlanLabel.AutoSize = true;
-            iD_StudyPlanLabel.Location = new System.Drawing.Point(12, 34);
+            iD_StudyPlanLabel.Location = new System.Drawing.Point(6, 26);
             iD_StudyPlanLabel.Name = "iD_StudyPlanLabel";
             iD_StudyPlanLabel.Size = new System.Drawing.Size(75, 13);
             iD_StudyPlanLabel.TabIndex = 1;
@@ -71,7 +90,7 @@
             // countLessonHoursLabel
             // 
             countLessonHoursLabel.AutoSize = true;
-            countLessonHoursLabel.Location = new System.Drawing.Point(12, 60);
+            countLessonHoursLabel.Location = new System.Drawing.Point(6, 52);
             countLessonHoursLabel.Name = "countLessonHoursLabel";
             countLessonHoursLabel.Size = new System.Drawing.Size(106, 13);
             countLessonHoursLabel.TabIndex = 3;
@@ -121,7 +140,11 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.studyPlansBindingNavigatorSaveItem});
+            this.studyPlansBindingNavigatorSaveItem,
+            this.toolStripSeparator1,
+            this.toolStripLabel1,
+            this.toolStripFindTextBox,
+            this.toolStripButton2});
             this.studyPlansBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.studyPlansBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.studyPlansBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -129,7 +152,7 @@
             this.studyPlansBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.studyPlansBindingNavigator.Name = "studyPlansBindingNavigator";
             this.studyPlansBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.studyPlansBindingNavigator.Size = new System.Drawing.Size(334, 25);
+            this.studyPlansBindingNavigator.Size = new System.Drawing.Size(684, 25);
             this.studyPlansBindingNavigator.TabIndex = 0;
             this.studyPlansBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -228,14 +251,41 @@
             this.studyPlansBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.studyPlansBindingNavigatorSaveItem.Click += new System.EventHandler(this.studyPlansBindingNavigatorSaveItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel1.Text = "Поиск:";
+            // 
+            // toolStripFindTextBox
+            // 
+            this.toolStripFindTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripFindTextBox.Name = "toolStripFindTextBox";
+            this.toolStripFindTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::MasterTeacherApp.Properties.Resources.search_16x16;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
             // iD_StudyPlanTextBox
             // 
             this.iD_StudyPlanTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.iD_StudyPlanTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "ID_StudyPlan", true));
-            this.iD_StudyPlanTextBox.Location = new System.Drawing.Point(124, 31);
+            this.iD_StudyPlanTextBox.Location = new System.Drawing.Point(118, 23);
             this.iD_StudyPlanTextBox.Name = "iD_StudyPlanTextBox";
-            this.iD_StudyPlanTextBox.Size = new System.Drawing.Size(198, 20);
+            this.iD_StudyPlanTextBox.Size = new System.Drawing.Size(536, 20);
             this.iD_StudyPlanTextBox.TabIndex = 2;
             // 
             // countLessonHoursTextBox
@@ -243,20 +293,110 @@
             this.countLessonHoursTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.countLessonHoursTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.studyPlansBindingSource, "CountLessonHours", true));
-            this.countLessonHoursTextBox.Location = new System.Drawing.Point(124, 57);
+            this.countLessonHoursTextBox.Location = new System.Drawing.Point(118, 49);
             this.countLessonHoursTextBox.Name = "countLessonHoursTextBox";
-            this.countLessonHoursTextBox.Size = new System.Drawing.Size(198, 20);
+            this.countLessonHoursTextBox.Size = new System.Drawing.Size(536, 20);
             this.countLessonHoursTextBox.TabIndex = 4;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(iD_StudyPlanLabel);
+            this.groupBox1.Controls.Add(this.countLessonHoursTextBox);
+            this.groupBox1.Controls.Add(countLessonHoursLabel);
+            this.groupBox1.Controls.Add(this.iD_StudyPlanTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(12, 28);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(660, 85);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Учебные планы";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.disciplinesDataGridView);
+            this.groupBox2.Location = new System.Drawing.Point(12, 119);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(660, 330);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Дисциплины";
+            // 
+            // classesTableAdapter
+            // 
+            this.classesTableAdapter.ClearBeforeFill = true;
+            // 
+            // disciplinesBindingSource
+            // 
+            this.disciplinesBindingSource.DataMember = "FK_Disciplines_StudyPlans";
+            this.disciplinesBindingSource.DataSource = this.studyPlansBindingSource;
+            // 
+            // disciplinesTableAdapter
+            // 
+            this.disciplinesTableAdapter.ClearBeforeFill = true;
+            // 
+            // disciplinesDataGridView
+            // 
+            this.disciplinesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.disciplinesDataGridView.AutoGenerateColumns = false;
+            this.disciplinesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.disciplinesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.disciplinesDataGridView.DataSource = this.disciplinesBindingSource;
+            this.disciplinesDataGridView.Location = new System.Drawing.Point(9, 19);
+            this.disciplinesDataGridView.Name = "disciplinesDataGridView";
+            this.disciplinesDataGridView.Size = new System.Drawing.Size(645, 305);
+            this.disciplinesDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_Discipline";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID_Discipline";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Teacher";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Teacher";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "ClassNumber";
+            this.dataGridViewTextBoxColumn4.HeaderText = "ClassNumber";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "StudyPlan";
+            this.dataGridViewTextBoxColumn5.HeaderText = "StudyPlan";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // StudyPlanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 111);
-            this.Controls.Add(iD_StudyPlanLabel);
-            this.Controls.Add(this.iD_StudyPlanTextBox);
-            this.Controls.Add(countLessonHoursLabel);
-            this.Controls.Add(this.countLessonHoursTextBox);
+            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.studyPlansBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(350, 150);
@@ -268,6 +408,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.studyPlansBindingNavigator)).EndInit();
             this.studyPlansBindingNavigator.ResumeLayout(false);
             this.studyPlansBindingNavigator.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,5 +439,20 @@
         private System.Windows.Forms.ToolStripButton studyPlansBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox iD_StudyPlanTextBox;
         private System.Windows.Forms.TextBox countLessonHoursTextBox;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripTextBox toolStripFindTextBox;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private Database.WorkHeadTeacherDataSetTableAdapters.ClassesTableAdapter classesTableAdapter;
+        private System.Windows.Forms.BindingSource disciplinesBindingSource;
+        private Database.WorkHeadTeacherDataSetTableAdapters.DisciplinesTableAdapter disciplinesTableAdapter;
+        private System.Windows.Forms.DataGridView disciplinesDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

@@ -66,5 +66,10 @@ namespace MasterTeacherApp.View
         }
 
         #endregion
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            SQLForm.Instance.ShowForm();
+        }
     }
 }

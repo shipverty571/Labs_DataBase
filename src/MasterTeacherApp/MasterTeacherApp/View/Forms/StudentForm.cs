@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MasterTeacherApp.View.Forms
@@ -45,6 +46,24 @@ namespace MasterTeacherApp.View.Forms
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "workHeadTeacherDataSet.Students". При необходимости она может быть перемещена или удалена.
             studentsTableAdapter.Fill(workHeadTeacherDataSet.Students);
+        }
+
+        private void studentsDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (studentsDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumnGender"].Value == null ||
+                studentsDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumnGender"].Value.ToString() == "")
+            {
+                e.CellStyle.BackColor = Color.LightGreen;
+            }
+            else
+            {
+                if
+                    (studentsDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumnGender"].Value.ToString() ==
+                     "мужской")
+                    e.CellStyle.BackColor = Color.SkyBlue;
+                else
+                    e.CellStyle.BackColor = Color.Pink;
+            }
         }
     }
 }

@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\ClassForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,16 +109,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WorkHeadTeacherDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\SQLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SQLForm.Designer.cs">
+      <DependentUpon>SQLForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="View\Forms\ClassForm.resx">
       <DependentUpon>ClassForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SQLForm.resx">
+      <DependentUpon>SQLForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -166,11 +175,15 @@
     <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sql_16x16.png" />
+    <Content Include="Resources\search_16x16.png" />
     <Content Include="Resource\about_16x16.png" />
     <Content Include="Resource\classroom_16x16.png" />
     <Content Include="Resource\discipline_16x16.png" />
     <Content Include="Resource\logout_16x16.png" />
     <Content Include="Resource\mark_16x16.png" />
+    <Content Include="Resource\search_16x16.png" />
+    <Content Include="Resource\sql_16x16.png" />
     <Content Include="Resource\student_16x16.png" />
     <Content Include="Resource\studyPlan_16x16.png" />
     <Content Include="Resource\teacher_16x16.png" />
