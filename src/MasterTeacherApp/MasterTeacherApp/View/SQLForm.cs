@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using System;
+using MasterTeacherApp.Model;
 
 namespace MasterTeacherApp.View
 {
@@ -32,7 +33,7 @@ namespace MasterTeacherApp.View
 
         public DataTable FillDataGridView(string sqlSelect)
         {
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.Work_Head_TeacherConnectionString);
+            SqlConnection connection = new SqlConnection(new ConnectionString().ConnectionStr);
             SqlCommand command = connection.CreateCommand();
             command.CommandText = sqlSelect;
             SqlDataAdapter adapter = new SqlDataAdapter();
@@ -121,7 +122,7 @@ namespace MasterTeacherApp.View
                 return;
             }
             string sqlDelete = @"DELETE FROM Teachers WHERE ID_teacher=@Id_teacher";
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.Work_Head_TeacherConnectionString);
+            SqlConnection connection = new SqlConnection(new ConnectionString().ConnectionStr);
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandText = sqlDelete;
@@ -171,7 +172,7 @@ namespace MasterTeacherApp.View
             string sqlInsert = @"INSERT INTO Teachers 
                 (Surname, Firstname, Middlename, WorkExperienceMonths, Competencies, Salary) 
                 VALUES (@Surname, @Firstname, @Middlename, @WorkExperience, @Competencies, @Salary)";
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.Work_Head_TeacherConnectionString);
+            SqlConnection connection = new SqlConnection(new ConnectionString().ConnectionStr);
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandText = sqlInsert;
@@ -226,7 +227,7 @@ namespace MasterTeacherApp.View
                 return;
             }
             string sqlUpdate = "UPDATE Teachers SET {0} WHERE ID_Teacher = @Id_teacher";
-            SqlConnection connection = new SqlConnection(Properties.Settings.Default.Work_Head_TeacherConnectionString);
+            SqlConnection connection = new SqlConnection(new ConnectionString().ConnectionStr);
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             string sqlValues = "";

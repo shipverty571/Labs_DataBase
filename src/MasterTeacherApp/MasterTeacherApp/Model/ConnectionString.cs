@@ -16,6 +16,7 @@ namespace MasterTeacherApp.Model
                 {
                     DataSource = "DESKTOP-OVFICRT",
                     InitialCatalog = "Work_Head_Teacher",
+                    ColumnEncryptionSetting = SqlConnectionColumnEncryptionSetting.Enabled,
                     UserID = login,
                     Password = password
                 }.ConnectionString;

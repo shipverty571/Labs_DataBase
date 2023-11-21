@@ -66,7 +66,7 @@ namespace MasterTeacherApp.View.Forms
                 return;
             }
 
-            marksBindingSource.Filter = toolStripFilterComboBox.SelectedItem + "='" + text + "'";
+            marksBindingSource.Filter = toolStripFilterComboBox.SelectedItem.ToString() + "='" + text + "'";
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)

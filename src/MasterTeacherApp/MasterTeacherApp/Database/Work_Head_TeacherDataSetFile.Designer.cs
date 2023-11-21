@@ -4413,7 +4413,7 @@ SELECT ID_Discipline, Name, Teacher, ClassNumber, StudyPlan FROM Disciplines WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4765,7 +4765,7 @@ SELECT ID_Mark, Discipline, Class, DateLesson, DateMark, Mark FROM Marks WHERE (
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5128,7 +5128,7 @@ SELECT ID_Student, Surname, Firstname, Middlename, Age, Gender, Class FROM Stude
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5531,7 +5531,7 @@ SELECT ID_StudyPlan, CountLessonHours FROM StudyPlans WHERE (ID_StudyPlan = @ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5854,7 +5854,7 @@ SELECT ID_Teacher, Surname, Firstname, Middlename, WorkExperienceMonths, Compete
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6275,7 +6275,7 @@ SELECT ID_Timetable, Class, Discipline, LessonNumber, Auditorium, DateLesson FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::MasterTeacherApp.Properties.Settings.Default.Work_Head_TeacherConnectionString;
+            this._connection.ConnectionString = new ConnectionString().ConnectionStr;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
