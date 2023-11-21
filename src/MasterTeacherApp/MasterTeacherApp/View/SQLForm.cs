@@ -65,22 +65,22 @@ namespace MasterTeacherApp.View
                 "Timetables ON Classes.ID_Class = Timetables.Class");
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
-        {
-            dataGridView2.DataSource = FillDataGridView(
-                "SELECT " +
-                "Teachers.Surname As 'Учитель', " +
-                "COUNT(DISTINCT Disciplines.ID_Discipline) AS 'Количество дисциплин' " +
-                "FROM " +
-                "Teachers " +
-                "JOIN Disciplines ON Disciplines.Teacher = Teachers.ID_Teacher " +
-                "GROUP BY " +
-                "Teachers.Surname " +
-                "HAVING " +
-                "COUNT(DISTINCT Disciplines.ID_Discipline) >= 3 " +
-                "ORDER BY " +
-                "'Количество дисциплин' DESC;");
-        }
+private void button1_Click(object sender, System.EventArgs e)
+{
+    dataGridView2.DataSource = FillDataGridView(
+        "SELECT " +
+        "Teachers.Surname As 'Учитель', " +
+        "COUNT(DISTINCT Disciplines.ID_Discipline) AS 'Количество дисциплин' " +
+        "FROM " +
+        "Teachers " +
+        "JOIN Disciplines ON Disciplines.Teacher = Teachers.ID_Teacher " +
+        "GROUP BY " +
+        "Teachers.Surname " +
+        "HAVING " +
+        "COUNT(DISTINCT Disciplines.ID_Discipline) >= 3 " +
+        "ORDER BY " +
+        "'Количество дисциплин' DESC;");
+}
 
         private void radioButton4_CheckedChanged(object sender, System.EventArgs e)
         {
